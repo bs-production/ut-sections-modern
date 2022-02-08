@@ -1,0 +1,38 @@
+{
+  "name": "@ut/sections-modern",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Stephan Burger",
+  "license": "MIT",
+  "scripts": {
+    "parcel:serve": "parcel serve src/pages/*.html --no-source-maps --no-cache",
+    "parcel:build": "parcel build src/pages/*.html --no-source-maps",
+    "clean": "rm -rf dist .parcel-cache",
+    "dev": "npm-run-all -s clean -p parcel:serve",
+    "build": "yarn parcel:build"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.2.1",
+    "@parcel/transformer-sass": "^2.2.1",
+    "@parcel/transformer-typescript-types": "^2.2.1",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/line-clamp": "^0.3.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "@ut-essentials/posthtml-pipeline": "https://gitpkg.now.sh/IamStephan/ut-essentials/packages/posthtml-pipeline?master",
+    "@ut-essentials/posthtml-tokens": "https://gitpkg.now.sh/IamStephan/ut-essentials/packages/posthtml-tokens?master",
+    "@ut-essentials/tailwindcss-preset-screens": "https://gitpkg.now.sh/IamStephan/ut-essentials/packages/tailwindcss-preset-screens?master",
+    "@ut-essentials/tailwindcss-preset-themable": "https://gitpkg.now.sh/IamStephan/ut-essentials/packages/tailwindcss-preset-themable?master",
+    "autoprefixer": "^10.4.1",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.2.1",
+    "postcss": "^8.4.5",
+    "posthtml-expressions": "^1.9.0",
+    "posthtml-extend": "^0.6.2",
+    "tailwindcss": "^3.0.8",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@ut-essentials/posthtml-extends": "https://gitpkg.now.sh/IamStephan/ut-essentials/packages/posthtml-extends?master"
+  }
+}
