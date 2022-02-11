@@ -1,0 +1,25 @@
+@function toRGB($color) {
+  @return red($color) + ', ' + green($color) + ', ' + blue($color);
+}
+
+:root {
+  /* Colors */
+  --color-template-primary-50: #{toRGB(#865bcb)};
+  --color-template-primary-100: #{toRGB(#7c51c1)};
+  --color-template-primary-200: #{toRGB(#7247b7)};
+  --color-template-primary-300: #{toRGB(#683dad)};
+  --color-template-primary-400: #{toRGB(#5e33a3)};
+  --color-template-primary-500: #{toRGB(#542999)};
+  --color-template-primary-600: #{toRGB(#4a1f8f)};
+  --color-template-primary-700: #{toRGB(#401585)};
+  --color-template-primary-800: #{toRGB(#360b7b)};
+  --color-template-primary-900: #{toRGB(#2c0171)};
+
+  .footer-section .form-based label {
+    @apply hidden;
+  }
+
+  .footer-section .button {
+    @apply py-4;
+  }
+}

@@ -1,0 +1,55 @@
+@function toRGB($color) {
+  @return red($color) + ', ' + green($color) + ', ' + blue($color);
+}
+
+:root {
+  /* Colors */
+  --color-template-primary-50: #{toRGB(#fff1a8)};
+  --color-template-primary-100: #{toRGB(#fee79e)};
+  --color-template-primary-200: #{toRGB(#f4dd94)};
+  --color-template-primary-300: #{toRGB(#ead38a)};
+  --color-template-primary-400: #{toRGB(#e0c980)};
+  --color-template-primary-500: #{toRGB(#d6bf76)};
+  --color-template-primary-600: #{toRGB(#ccb56c)};
+  --color-template-primary-700: #{toRGB(#c2ab62)};
+  --color-template-primary-800: #{toRGB(#b8a158)};
+  --color-template-primary-900: #{toRGB(#ae974e)};
+
+  --color-template-secondary-50: #{toRGB(#415472)};
+  --color-template-secondary-100: #{toRGB(#374a68)};
+  --color-template-secondary-200: #{toRGB(#2d405e)};
+  --color-template-secondary-300: #{toRGB(#233654)};
+  --color-template-secondary-400: #{toRGB(#192c4a)};
+  --color-template-secondary-500: #{toRGB(#0f2240)};
+  --color-template-secondary-600: #{toRGB(#051836)};
+  --color-template-secondary-700: #{toRGB(#000e2c)};
+  --color-template-secondary-800: #{toRGB(#000422)};
+  --color-template-secondary-900: #{toRGB(#000018)};
+
+  /*======= COMPONENT OVERWRITES =======*/
+  .button.button.button {
+    @apply rounded-none text-template-secondary-500 capitalize font-bold border-2 border-template-primary-900 p-4 px-2 text-xl;
+  }
+
+  /*======= FOOTER SECTION =======*/
+
+  .footer-section {
+    &__info {
+      @apply bg-[#F7F2E4];
+      @apply col-start-1 col-end-2 row-start-1 row-end-2;
+    }
+
+    &__links {
+      @apply col-start-2 col-end-5 row-start-1 row-end-2;
+
+      * {
+        @apply text-template-secondary-300;
+      }
+    }
+
+    &__banner {
+      @apply bg-template-secondary-400 text-gray-50;
+      @apply col-start-1 col-end-5 row-start-2 row-end-3;
+    }
+  }
+}
