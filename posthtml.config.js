@@ -16,6 +16,7 @@ module.exports = {
               '[[page_name]]': 'Content Header',
               '[phone]': '1-800-922-2488',
               '[license number]': 'Contractor License #826234',
+              '[[site_url]]': 'localhost:1234',
               '[[city_scroll:50]]': ({ readFile }) =>
                 readFile('./src/tokens/city_scroll.html'),
               '[[breadcrumbs]]': ({ readFile }) =>
