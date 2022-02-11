@@ -32,6 +32,19 @@
   yarn run clean
 ```
 
+### Viewing the designs
+
+Generic styles
+
+- localhost:1234
+
+Design specific:
+
+- localhost:1234/badger.html
+- localhost:1234/buck.html
+- localhost:1234/cantey.html
+- localhost:1234/woods.html
+
 ## Folders and files
 
 Having a structured approach to template developement is key to a great and maintainable template.
@@ -78,19 +91,6 @@ To import/use a html template use the `<use src="[path_to_template]">` tag. The 
 
 **Client:** ParcelJS, Tailwind CSS, Sass
 
-### Viewing the designs
-
-Generic styles
-
-- localhost:1234
-
-Design specific:
-
-- localhost:1234/badger.html
-- localhost:1234/buck.html
-- localhost:1234/cantey.html
-- localhost:1234/woods.html
-
-### Generating Colors
+## Generating Colors
 
 https://tailwindcolorgenerator.com/
