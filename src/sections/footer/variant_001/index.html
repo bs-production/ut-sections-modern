@@ -1,5 +1,30 @@
-<footer>[[bottom_nav]]</footer>
-
 <style>
   @import '/src/sections/footer/variant_001/styles.scss';
 </style>
+
+<footer class="footer-section">
+  <section class="footer-section__info">
+    <div class="footer-section__info-cta">
+      <div class="footer-section__info-cta-action form-based">
+        <label>Contact Us Online</label>
+        <a class="button button-primary">Get your free estimate</a>
+      </div>
+
+      <div class="footer-section__info-cta-action phone-based">
+        <label>Or call us at</label>
+        <a class="phone">[phone]</a>
+      </div>
+    </div>
+    <slot name="business-hours">
+      <div class="footer-section__info-hours"></div>
+    </slot>
+  </section>
+
+  <section class="footer-section__links">[[bottom_nav]]</section>
+
+  <section class="footer-section__banner">
+    <div class="footer-section__banner-copywrite">© 2022 [[title]]</div>
+    <slot class="business-address"></slot>
+    <div class="footer-section__banner-address"></div>
+  </section>
+</footer>
