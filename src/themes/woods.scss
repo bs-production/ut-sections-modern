@@ -4,14 +4,34 @@
 
 :root {
   /* Colors */
-  --color-template-primary-50: #{toRGB(#fff3f1)};
-  --color-template-primary-100: #{toRGB(#ffe4e0)};
-  --color-template-primary-200: #{toRGB(#ffcdc5)};
-  --color-template-primary-300: #{toRGB(#ffaa9d)};
-  --color-template-primary-400: #{toRGB(#ff7a65)};
-  --color-template-primary-500: #{toRGB(#fe5035)};
-  --color-template-primary-600: #{toRGB(#ed3f24)};
-  --color-template-primary-700: #{toRGB(#c7270e)};
-  --color-template-primary-800: #{toRGB(#a42410)};
-  --color-template-primary-900: #{toRGB(#882414)};
+  --color-template-primary-50: #{toRGB(#ffaee4)};
+  --color-template-primary-100: #{toRGB(#ffa4da)};
+  --color-template-primary-200: #{toRGB(#ff9ad0)};
+  --color-template-primary-300: #{toRGB(#f990c6)};
+  --color-template-primary-400: #{toRGB(#ef86bc)};
+  --color-template-primary-500: #{toRGB(#e57cb2)};
+  --color-template-primary-600: #{toRGB(#db72a8)};
+  --color-template-primary-700: #{toRGB(#d1689e)};
+  --color-template-primary-800: #{toRGB(#c75e94)};
+  --color-template-primary-900: #{toRGB(#bd548a)};
+
+  /*======= COMPONENT OVERWRITES =======*/
+  .button.button.button {
+    @apply bg-template-primary-400 text-gray-900;
+  }
+
+  /*======= FOOTER SECTION =======*/
+
+  .footer-section {
+    @apply bg-[#fafafa];
+
+    &__info {
+      @apply bg-[#fafafa];
+      @apply col-start-1 col-end-2 row-start-1 row-end-2;
+    }
+
+    .form-based label {
+      @apply hidden;
+    }
+  }
 }
