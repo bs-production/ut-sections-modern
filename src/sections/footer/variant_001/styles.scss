@@ -3,7 +3,7 @@
 
   &__info {
     @apply col-start-1 col-end-2 row-start-1 row-end-3;
-    @apply flex justify-center items-center py-12 bg-gray-50;
+    @apply flex justify-center items-start pl-16 py-12 bg-gray-50 flex-col;
 
     &-cta {
       @apply space-y-6;
@@ -22,6 +22,16 @@
     }
 
     &-hours {
+      @apply mt-6 space-y-4;
+
+      &-block {
+        label {
+          @apply text-lg font-bold;
+        }
+
+        p {
+        }
+      }
     }
   }
 
@@ -30,7 +40,7 @@
   }
 
   &__banner {
-    @apply col-start-2 col-end-5 row-start-2 row-end-3 py-4;
+    @apply col-start-2 col-end-5 row-start-2 row-end-3 py-4 self-end;
     @apply flex justify-center;
 
     &-copywrite {
