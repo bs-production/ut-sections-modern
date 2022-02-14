@@ -4,19 +4,32 @@
 
 <footer class="footer-section">
   <section class="footer-section__info">
-    <div class="footer-section__info-cta">
-      <div class="footer-section__info-cta-action form-based">
-        <label>Contact Us Online</label>
-        <a class="button button-primary">Get your free estimate</a>
-      </div>
+    <slot name="info-cta">
+      <div class="footer-section__info-cta">
+        <div class="footer-section__info-cta-action form-based">
+          <label>Contact Us Online</label>
+          <a class="button button-primary">Get your free estimate</a>
+        </div>
 
-      <div class="footer-section__info-cta-action phone-based">
-        <label>Or call us at</label>
-        <a class="phone">[phone]</a>
+        <div class="footer-section__info-cta-action phone-based">
+          <label>Or call us at</label>
+          <a class="phone" href="tel:[phone]">[phone]</a>
+        </div>
       </div>
-    </div>
-    <slot name="business-hours">
-      <div class="footer-section__info-hours"></div>
+    </slot>
+
+    <slot name="info-hours">
+      <div class="footer-section__info-hours">
+        <div class="footer-section__info-hours-block">
+          <label>Office Hours</label>
+          <p>Monday - Friday 8:00am - 5:00pm</p>
+        </div>
+
+        <div class="footer-section__info-hours-block">
+          <label>Weekend Phone hours</label>
+          <p>Saturday 9:00am - 12:00am</p>
+        </div>
+      </div>
     </slot>
   </section>
 
@@ -24,7 +37,8 @@
 
   <section class="footer-section__banner">
     <div class="footer-section__banner-copywrite">© 2022 [[title]]</div>
-    <slot class="business-address"></slot>
-    <div class="footer-section__banner-address"></div>
+    <slot class="banner-address">
+      <div class="footer-section__banner-address"></div>
+    </slot>
   </section>
 </footer>
